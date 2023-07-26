@@ -1,13 +1,17 @@
 :root {
-    --branco-principal:#FFFFFF;
+    --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7; 
-    --cor-de-fundo: #00030C; 
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
-body{
+body {
     background-color: var(--cor-de-fundo);
-color: var(--branco-principal);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 *{
     margin: 0;
@@ -15,5 +19,29 @@ color: var(--branco-principal);
 }
 
 .principal {
-background-image: url("WhatsApp\ Image\ 2023-05-16\ at\ 21.56.06.jpeg");
+    background-image: url("img/Combo.png");
+    background-repeat: no-repeat;
+    background-size: contain    ;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+    font-size:12px ;
+    color: var(--cinza-secundario);
 }
